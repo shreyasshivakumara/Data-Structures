@@ -31,4 +31,6 @@ def rev_word3(s):
     # Join the reversed words
     return " ".join(reversed(words))
   
-  
+ 
+
+rev_word3('   Hello My name is Shreyas   ')
