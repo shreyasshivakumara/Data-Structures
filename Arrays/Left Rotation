@@ -1,0 +1,34 @@
+import math
+import os
+import random
+import re
+import sys
+
+def rotate(a,d,n):
+    for i in range(d):
+        rotatebyone(a,n)
+    return a
+    
+
+def rotatebyone(a,n):
+    temp = a[0]
+    for i in range(n-1):
+        a[i] = a[i+1]
+    a[n-1] = temp
+
+def leftRotation(a, d, n):
+    i=0
+    while i < n:
+        print (a[(i+d)%n], end = ' ')
+        i+=1
+    return i
+
+if __name__ == '__main__':
+    nd = input().split()
+
+    n = int(nd[0])
+
+    d = int(nd[1])
+
+    a = list(map(int, input().rstrip().split()))
+    leftRotation(a,d,n)
