@@ -1,0 +1,21 @@
+def balance_check(s):
+    opening = set('{[(')
+    matching = set([('{','}'), ('[',']'), ('(',')')])
+    temp = []
+    
+    if len(s)%2 != 0:
+        return(False)
+    
+    for i in s:
+        if i in opening:
+            temp.append(i)
+        
+        else:
+            if len(s) == 0:
+                return(False)
+            last = temp.pop()
+            
+            if (last,i) not in matching:
+                return(False)
+    return(True)
+            
