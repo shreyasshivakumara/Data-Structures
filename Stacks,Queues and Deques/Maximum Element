@@ -1,0 +1,9 @@
+items = [0]
+for i in range(int(input())):
+    number = list(map(int,input().split()))
+    if number[0] == 1:
+        items.append(max(number[1],items[-1]))
+    elif number[0] == 2:
+        items.pop()
+    else:
+        print(items[-1])
