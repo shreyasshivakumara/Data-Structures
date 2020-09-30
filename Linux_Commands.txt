@@ -1,0 +1,10 @@
+1. ssh -i /mnt/c/Users/Shivakumara/Desktop/gohan.pem ubuntu@130.238.29.215
+2.  password - shreyas123
+3.Mounting - https://github.com/naturalis/openstack-docs/wiki/Howto:-Creating-and-using-Volumes-on-a-Linux-instance
+4. df -hT
+5. https://linuxize.com/post/how-to-use-linux-screen/
+
+6. CLOUD CONFIG -
+    https://www.digitalocean.com/community/tutorials/how-to-use-cloud-config-for-your-initial-server-setup
+7. SNIC password:
+	shreyas123
